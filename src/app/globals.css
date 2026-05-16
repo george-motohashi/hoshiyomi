@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    background-color: #0b1026;
+    color: #f5f3ff;
+    min-height: 100%;
+  }
+
+  body {
+    font-feature-settings: "palt";
+  }
+
+  ::selection {
+    background: rgba(212, 175, 55, 0.35);
+    color: #f5f3ff;
+  }
+}
+
+@layer utilities {
+  .starfield {
+    background-image:
+      radial-gradient(1px 1px at 12% 18%, rgba(245, 243, 255, 0.85) 0%, transparent 60%),
+      radial-gradient(1px 1px at 78% 32%, rgba(212, 175, 55, 0.6) 0%, transparent 60%),
+      radial-gradient(1.5px 1.5px at 35% 70%, rgba(245, 243, 255, 0.6) 0%, transparent 60%),
+      radial-gradient(1px 1px at 60% 85%, rgba(207, 201, 230, 0.7) 0%, transparent 60%),
+      radial-gradient(1.5px 1.5px at 88% 60%, rgba(212, 175, 55, 0.5) 0%, transparent 60%),
+      radial-gradient(1px 1px at 22% 88%, rgba(245, 243, 255, 0.55) 0%, transparent 60%),
+      radial-gradient(1px 1px at 50% 12%, rgba(245, 243, 255, 0.7) 0%, transparent 60%),
+      radial-gradient(2px 2px at 70% 55%, rgba(111, 91, 181, 0.5) 0%, transparent 70%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .gold-line {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(212, 175, 55, 0.6) 50%,
+      transparent 100%
+    );
+  }
+
+  .glass-card {
+    background: linear-gradient(
+      180deg,
+      rgba(22, 27, 61, 0.85) 0%,
+      rgba(11, 16, 38, 0.95) 100%
+    );
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    box-shadow:
+      0 30px 60px -20px rgba(0, 0, 0, 0.6),
+      inset 0 0 0 1px rgba(245, 243, 255, 0.03);
+  }
+}

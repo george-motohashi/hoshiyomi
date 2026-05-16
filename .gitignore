@@ -16,10 +16,15 @@ dist/
 build/
 .next/
 .cache/
+out/
+.vercel/
+next-env.d.ts
+tsconfig.tsbuildinfo
 
 # 秘密情報（permissions の deny と二重防御）
 .env
 .env.*
+!.env.example
 *.pem
 *.key
 secrets/

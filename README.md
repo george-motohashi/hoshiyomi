@@ -1,12 +1,18 @@
-# my-new-app
+# hoshiyomi（星詠み）
 
-Claude Code 用に最適化された開発環境です。
-このプロジェクトは `development-environment` マスターから生成されました。
+**AI × スピリチュアル**のスモールビジネス hoshiyomi の運営リポジトリです。
+四柱推命・西洋占星術・タロットを核に、顔出しせず自動化された仕組みで「毎日のお守り体験」を届け、コアファンを育てます。
+
+- 📜 事業仕様: `SPEC.md`
+- 🛠 運用ルール: `CLAUDE.md`
+- 🎯 Phase 1 目標: 月5万円（PDF レポート + LINE 月額 + AI Web アプリ）
+
+このリポジトリは Claude Code 用に最適化された開発環境ベースから生成されました。
 
 ## はじめ方
 
 ```bash
-cd ~/Desktop/dev/development-environment/my-new-app
+cd ~/Desktop/dev/hoshiyomi
 claude
 ```
 

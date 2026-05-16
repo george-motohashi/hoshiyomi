@@ -67,6 +67,14 @@ NEXT_PUBLIC_SITE_URL=https://hoshiyomi.example.com
 ---
 
 ## スプリント2: メール/LINE 集客動線 — pending
+
+### 事前決定事項（Sprint 2 着手時に使う）
+- **メール送信プロバイダ**: **Resend** に決定（無料枠 100通/日、Next.js との相性最高、ドメイン検証シンプル）
+  - 必要: resend.com でアカウント作成 → API キーを `.env.local` の `RESEND_API_KEY` に
+  - API キー未設定時は「メアド収集のみ・送信スキップ」のフォールバックモードで動作させる
+- **LINE 公式アカウント**: Sprint 2 で「LINE 友達追加 URL」を `NEXT_PUBLIC_LINE_ADD_URL` で受ける構造に。channel 作成は後でユーザーが実施
+
+
 ## スプリント3: 有料 PDF レポート販売 — pending
 ## スプリント4: SNS 自動投稿基盤 — pending
 ## スプリント5: LINE bot プレミアム月額 — pending

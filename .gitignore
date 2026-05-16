@@ -1,0 +1,26 @@
+# Claude Code が書き出すログ・ローカル設定
+.claude/audit.log
+.claude/settings.local.json
+
+# 評価・スクショ用の一時ファイル（マスター以外では除外）
+_eval_*.png
+screenshot.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 一般的なビルド成果物
+node_modules/
+dist/
+build/
+.next/
+.cache/
+
+# 秘密情報（permissions の deny と二重防御）
+.env
+.env.*
+*.pem
+*.key
+secrets/
+credentials*

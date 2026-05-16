@@ -52,7 +52,7 @@ export default function HomePage() {
           HOSHIYOMI
         </p>
         <h1 className="mt-4 text-center font-serif text-3xl font-medium leading-snug tracking-wider text-moon sm:text-4xl">
-          今日の星が、
+          今日の星が、テスト
           <br className="sm:hidden" />
           あなたに詠む。
         </h1>
